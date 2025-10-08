@@ -8,24 +8,16 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) {
 
         Scanner leitor = new Scanner(System.in);
         String cep = "";
 
-        System.out.println("DIFITE O CEP: ");
+        System.out.println("DIGITE O CEP: ");
         cep = leitor.nextLine();
 
-        String endereco = "http://viacep.com.br/ws/"+cep+"/json/";
+        Service resposta = new Service();
 
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(endereco))
-                .build();
-
-        HttpResponse<String> response = client
-                .send(request, HttpResponse.BodyHandlers.ofString());
-
-        System.out.println(response.body());
+        System.out.println(resposta.consutar(cep));
     }
 }
