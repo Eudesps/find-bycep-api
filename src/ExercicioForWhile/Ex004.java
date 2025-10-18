@@ -6,6 +6,9 @@ import java.util.Scanner;
 public class Ex004 {
     public static void main(String[] args) {
         String digitado = "";
+
+        //Essa variável (acaoKey) vai monitorar se o nome que se deseja
+        //adicionar é igual a algum já presente no array. -1 para presente e 0 para sem ocorrências.
         int acaoKey = 0;
 
         String comando = "";
@@ -27,7 +30,7 @@ public class Ex004 {
                         acaoKey = -1;
                     }
                 }
-                if (acaoKey != -1) {
+                if (acaoKey == 0) {
                     convidados.add(digitado);
                     System.out.println("Salvo com sucesso!!");
                 }else{
