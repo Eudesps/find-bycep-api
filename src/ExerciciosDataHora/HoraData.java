@@ -11,7 +11,7 @@ public class HoraData {
         LocalTime horaAtual = LocalTime.now();
 
         DateTimeFormatter formatoData = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("hh:mm");
+        DateTimeFormatter formatoHora = DateTimeFormatter.ofPattern("HH:mm");
 
 
         System.out.println("Data: " + dataAtual.format(formatoData) + " Hora: " + horaAtual.format(formatoHora));
