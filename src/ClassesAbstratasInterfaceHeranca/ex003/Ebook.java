@@ -11,6 +11,6 @@ public class Ebook extends Midia{
 
     @Override
     public void exibirInfo() {
-        System.out.printf("Código: %s | Ebook: %s - Formato: %s", this.gerarCod(), this.titulo, this.formato);
+        System.out.printf("Código: %s | Ebook: %s - Formato: %s \n", this.gerarCod(), this.titulo, this.formato);
     }
 }

@@ -11,6 +11,6 @@ public class Revista extends Midia{
 
     @Override
     public void exibirInfo() {
-        System.out.printf("Código: %s | Revista: %s - Edição: %s", this.gerarCod(), this.titulo, this.edicao);
+        System.out.printf("Código: %s | Revista: %s - Edição: %s \n", this.gerarCod(), this.titulo, this.edicao);
     }
 }

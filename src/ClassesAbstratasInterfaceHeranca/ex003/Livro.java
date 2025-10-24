@@ -10,6 +10,6 @@ public class Livro extends Midia{
 
     @Override
     public void exibirInfo() {
-        System.out.printf("Código: %s | Livro: %s - Autor: %s", this.gerarCod(), this.titulo, this.autor);
+        System.out.printf("Código: %s | Livro: %s - Autor: %s \n", this.gerarCod(), this.titulo, this.autor);
     }
 }
