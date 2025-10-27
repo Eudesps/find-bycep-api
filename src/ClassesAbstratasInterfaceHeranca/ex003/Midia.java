@@ -10,7 +10,7 @@ public abstract class Midia {
     }
 
     public String gerarCod(){
-        return "LIB-" +  titulo.substring(0,3) + anoPublicacao;
+        return "LIB-" +  titulo.substring(0,3).replaceAll("\\s", "") + anoPublicacao;
     }
 
     public abstract void exibirInfo();
